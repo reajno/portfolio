@@ -13,13 +13,15 @@ const NavBar = () => {
       <HStack spacing={2} p="5" position="relative" justify="space-between" align="items-center"
       >
         {width > 768 ? <NavMenuLarge /> : <NavMenuSmall />}
-        
+
+        <Float placement="middle-center">
         <BrandLogo
-        position="absolute"
-          className={
-            "left-0 right-0 mx-auto max-w-20 flex justify-center"
-          }
-          />
+        // position="absolute"
+        // className={
+        //   "left-0 right-0 mx-auto max-w-20 flex justify-center"
+        // }
+        />
+        </Float>
         <Cart />
       </HStack>
     </Container>
